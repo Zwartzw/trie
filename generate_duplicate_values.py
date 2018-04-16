@@ -3,6 +3,7 @@ import threading
 import os
 import multiprocessing as mp
 import time
+# 该文件用来创建字符串文本
 def target():
     lines = [str(random.randint(10 ** 7, 10 ** 8)) + '\n' for _ in range(100000)]
     with lock:
