@@ -47,7 +47,7 @@ if __name__ == '__main__':
     trie = Trie()
 
     with open('data\qq.txt','r') as f:
-        for line in f.readlines(100000):
+        for line in f:
             trie.insert(line.strip())
     print(sys.getsizeof(trie))
 
